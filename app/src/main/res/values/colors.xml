@@ -8,4 +8,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="toolbar">#006666</color>
+    <color name="text1">#CBB26A</color>
+    <color name="text2">#be9e44</color>
+    <color name="logo_back">#111111</color>
+    <color name="tab_text">#A8A6A6</color>
 </resources>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "104163040471",
+    "project_id": "czat-7e2cc",
+    "storage_bucket": "czat-7e2cc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:104163040471:android:a6a490eb215b3561b1e492",
+        "android_client_info": {
+          "package_name": "com.example.czat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "104163040471-32u1slin3l4fapsfknq5om52aro585t3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwmncGyQzFC166fQSX79vyZlOERiN-2vs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "104163040471-32u1slin3l4fapsfknq5om52aro585t3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

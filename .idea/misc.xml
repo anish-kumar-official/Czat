@@ -3,9 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Android studio files/Czat/app/src/main/res/layout/activity_auth.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android studio files/Czat/app/src/main/res/layout/activity_endpage.xml" value="0.27291666666666664" />
         <entry key="..\:/Android studio files/Czat/app/src/main/res/layout/activity_main.xml" value="0.2578125" />
+        <entry key="..\:/Android studio files/Czat/app/src/main/res/layout/activity_splash_screen.xml" value="0.27291666666666664" />
         <entry key="..\:/Android studio files/Czat/app/src/main/res/layout/fragment_calls.xml" value="0.27291666666666664" />
         <entry key="..\:/Android studio files/Czat/app/src/main/res/layout/fragment_chat.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android studio files/Czat/app/src/main/res/layout/fragment_signin.xml" value="0.27291666666666664" />
+        <entry key="..\:/Android studio files/Czat/app/src/main/res/layout/fragment_signup.xml" value="0.27291666666666664" />
         <entry key="..\:/Android studio files/Czat/app/src/main/res/layout/fragment_status.xml" value="0.27291666666666664" />
       </map>
     </option>

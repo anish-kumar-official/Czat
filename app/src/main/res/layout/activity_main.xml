@@ -11,7 +11,8 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:layout_marginBottom="8dp"
-        android:background="@color/toolbar"
+        android:background="@color/black"
+        app:titleTextColor="@color/text2"
         app:layout_constraintBottom_toTopOf="@+id/tabMain"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -23,15 +24,17 @@
         android:id="@+id/tabMain"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/toolbar"
-        app:tabIndicatorColor="#8BC34A"
-        app:tabSelectedTextColor="@color/black"
+        android:background="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.081" />
+        app:layout_constraintVertical_bias="0.081"
+        app:tabIndicatorColor="@color/text1"
+        app:tabTextColor="#A8A6A6"
+        app:tabSelectedTextColor="@color/text1"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewpagerMain"
