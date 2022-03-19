@@ -3,6 +3,7 @@ package com.example.czat
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatDialogFragment
@@ -17,7 +18,7 @@ import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_auth.*
 import kotlinx.android.synthetic.main.fragment_signin.*
 
-class AuthActivity : AppCompatActivity() {
+class AuthActivity : AppCompatActivity(),FirebaseAuth.AuthStateListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,11 +35,6 @@ class AuthActivity : AppCompatActivity() {
 
     }
 
-    internal fun signin(){
-        val intent = Intent(this,Endpage::class.java)
-        startActivity(intent)
-    }
-
     class Authpageradapter(fragmentActivity: FragmentActivity):FragmentStateAdapter(fragmentActivity){
         override fun getItemCount(): Int {
             return 2
@@ -53,4 +49,35 @@ class AuthActivity : AppCompatActivity() {
         }
 
     }
+
+    override fun onStart() {
+        super.onStart()
+        Log.d("startmainactivity","onstart begin")
+        FirebaseAuth.getInstance().addAuthStateListener(this)
+        if(FirebaseAuth.getInstance()!=null){
+            startmainactivity()
+        }
+
+    }
+
+    override fun onStop() {
+        super.onStop()
+        FirebaseAuth.getInstance().removeAuthStateListener(this)
+    }
+
+    override fun onAuthStateChanged(p0: FirebaseAuth) {
+        Log.d("startmainactivity","authstate changed")
+        if(p0.currentUser!=null){
+            startmainactivity()
+        }
+
+    }
+
+    private fun startmainactivity() {
+        Log.d("startmainactivity","startmainactivity started")
+        val intent = Intent(this,MainActivity::class.java)
+        startActivity(intent)
+        finish()
+    }
+
 }

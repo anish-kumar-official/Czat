@@ -1,32 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/logo_back"
-    tools:context=".AuthActivity"
-    android:orientation="vertical">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:scaleType="fitCenter"
-        android:src="@drawable/logo2"/>
-
-    <com.google.android.material.tabs.TabLayout
-        android:id="@+id/tab_auth"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:tabTextColor="@color/tab_text"
-        app:tabIndicatorColor="@color/text2"
-        android:background="@color/logo_back"
-        app:tabSelectedTextColor="@color/text2"
-        tools:ignore="SpeakableTextPresentCheck" />
-    <androidx.viewpager2.widget.ViewPager2
-        android:id="@+id/vp_auth"
+    <androidx.appcompat.widget.LinearLayoutCompat
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#2E2E2E" />
+        android:background="@color/logo_back"
+        tools:context=".AuthActivity"
+        android:orientation="vertical">
 
-</androidx.appcompat.widget.LinearLayoutCompat>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo2"/>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_auth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tabTextColor="@color/tab_text"
+            app:tabIndicatorColor="@color/text2"
+            android:background="@color/logo_back"
+            app:tabSelectedTextColor="@color/text2"
+            tools:ignore="SpeakableTextPresentCheck" />
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/vp_auth"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#2E2E2E" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
