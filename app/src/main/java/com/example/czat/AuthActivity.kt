@@ -50,16 +50,16 @@ class AuthActivity : AppCompatActivity(),FirebaseAuth.AuthStateListener {
 
     }
 
-    override fun onStart() {
-        super.onStart()
-        Log.d("startmainactivity","onstart begin")
-        FirebaseAuth.getInstance().addAuthStateListener(this)
-        if(FirebaseAuth.getInstance()!=null){
-            startmainactivity()
-        }
-
-    }
-
+//    override fun onStart() {
+//        super.onStart()
+//        Log.d("startmainactivity","onstart begin")
+//        FirebaseAuth.getInstance().addAuthStateListener(this)
+//        if(FirebaseAuth.getInstance()!=null){
+//            startmainactivity()
+//        }
+//
+//    }
+//
     override fun onStop() {
         super.onStop()
         FirebaseAuth.getInstance().removeAuthStateListener(this)

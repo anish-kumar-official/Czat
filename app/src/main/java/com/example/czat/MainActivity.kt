@@ -16,6 +16,8 @@ import com.example.czat.fragments.ChatFragment
 import com.example.czat.fragments.StatusFragment
 import com.google.android.material.tabs.TabLayoutMediator
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_main.view.*
 
@@ -72,7 +74,7 @@ class MainActivity : AppCompatActivity() {
             }
             R.id.menulogout ->{
                 Toast.makeText(this,"logout Clicked",Toast.LENGTH_LONG).show()
-                FirebaseAuth.getInstance().signOut()
+               Firebase.auth.signOut()
                 val intent = Intent(this,AuthActivity::class.java)
                 startActivity(intent)
                 finish()
